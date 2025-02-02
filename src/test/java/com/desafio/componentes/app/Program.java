@@ -23,7 +23,8 @@ public class Program {
         double discount = sc.nextDouble();
 
         Order order1 = new Order(order, basic, discount);
-        OrderService orderService = new OrderService();
+        ShippingService shippingService = new ShippingService();
+        OrderService orderService = new OrderService(shippingService);
 
         double total = orderService.total(order1);
         //Saída

@@ -1,6 +1,5 @@
 package com.desafio.componentes.app;
 
-import ch.qos.logback.core.net.SyslogOutputStream;
 import com.desafio.componentes.Service.OrderService;
 import com.desafio.componentes.Service.ShippingService;
 import com.desafio.componentes.entities.Order;

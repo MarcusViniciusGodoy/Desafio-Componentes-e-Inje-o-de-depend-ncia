@@ -6,12 +6,12 @@ import org.springframework.stereotype.Service;
 public class ShippingService{
 
     public double shipment(double basic){
-        if (basic < 100.00){
-            return 20.0;
-        } else if (basic > 200.00) {
-            return 0.0;
-        }else{
-            return 12.0;
+        if (basic < 100) {
+        	return 20;
+        }else if(basic > 100 && basic < 200) {
+        	return 12;
+        }else {
+        	return 0;
         }
     }
 }

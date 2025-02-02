@@ -36,8 +36,8 @@ public class ComponentesApplication implements CommandLineRunner{
         double basic = sc.nextDouble();
         System.out.println("Digite o desconto: ");
         double discount = sc.nextDouble();
-
         Order order1 = new Order(order, basic, discount);
+        
         ShippingService shippingService = new ShippingService();
         OrderService orderService = new OrderService(shippingService);
 
